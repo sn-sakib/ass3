@@ -7,7 +7,15 @@
     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>assignment 3</title>
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
     <script>
         tailwind.config = {
           theme: {
@@ -20,7 +28,7 @@
         }
       </script>
 </head>
-<body class=" ">
+<body class="font-manrope ">
     <header class="m-14">
         <nav class="">
             <div class="navbar bg-base-100">
@@ -29,7 +37,7 @@
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box font-semibold  mx-2">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box font-semibold ">
                         <li><a class="text-orange-600">Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -37,7 +45,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-3xl font-bold">Hockey<span class="text-orange-600 -m-2">’</span>s</a>
+                  <a class="text-xl font-bold lg:text-3xl lg:font-bold">Hockey<span class="text-orange-600 ">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden mx-2 lg:flex">
                   <ul class="menu menu-horizontal font-bold mx-2 text-lg text-gray-400">
@@ -49,12 +57,82 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn bg-orange-500 text-white w-max">Get Ticket</a>
+                  <div class="p-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  </div>
+                  <div>
+                    <a class="btn bg-orange-500 text-white lg:w-36">Get Ticket</a>
+                </div>
                 </div>
               </div>
         </nav>
+        <!-- banner section -->
+        <section>
+            <div class="carousel lg:h-[550px] mx-2 my-6">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
     <main>
+        <!-- progress -->
+        <section class="m-14">
+            <h3 class="text-3xl text-center font-bold">Professional Hockeys Club
+            </h3>
+            <p class="text-center lg:w-[600px] mx-auto mt-3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+           <div class=" justify-center gap-5 mt-7 mx-6 md:text-center md:grid md:grid-cols-2 grid grid-cols-1 lg:grid lg:grid-cols-4">
+           <div class="text-center w-60">
+            <div class="radial-progress text-error" style="--value:87;" role="progressbar">87%</div>
+            <h4 class="text-xl font-bold m-2">Player Facility</h4>
+            <p class="text-[14px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+           </div> 
+            <div class="text-center w-60">
+                <div class="radial-progress text-success" style="--value:95;" role="progressbar">95%</div>
+                <h4 class="text-xl font-bold m-2">Experienced Coach</h4>
+                <p class="text-[14px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center w-60">
+                <div class="radial-progress text-warning" style="--value:90;" role="progressbar">90%</div>
+                <h4 class="text-xl font-bold m-2">Senior Player</h4>
+                <p class="text-[14px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center w-60">
+                <div class="radial-progress text-info" style="--value:80;" role="progressbar">80%</div>
+                <h4 class="text-xl font-bold m-2">Training Ground</h4>
+                <p class="text-[14px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+
+           </div>
+            
+
+        </section>
 
     </main>
     <footer>
